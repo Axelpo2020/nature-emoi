@@ -1,0 +1,135 @@
+/* ==|====================
+   Layout/Section productive
+   ======================= */
+
+.container__section--productive {
+    margin-top: 250px;
+    background: hsl(240, 75%, 98%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.container__section--productive::before {
+    content: '';
+    display: block;
+    background: url('/images/bg-curve-desktop.svg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 21%;
+    position: absolute;
+    top: -21%;
+    background-position: top;
+}
+
+@media screen and (max-width: 727px) {
+    .container__section--productive::before {
+        background: url('/images/bg-curve-mobile.svg') no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 136px;
+        position: absolute;
+        bottom: 0;
+        top: -136px;
+    }
+}
+
+#productive {
+    margin-bottom: 70px;
+}
+
+.productive__container--right {
+    width: 50%;
+}
+
+
+.btn--secondary {
+    color: hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid hsl(170, 45%, 43%);
+    position: relative;
+}
+
+.btn--secondary::after {
+    content: '';
+    background: url('/images/icon-arrow.svg') no-repeat;
+    background-size: cover;
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    right: -30px;
+}
+
+.productive__container--testimonial {
+    box-shadow: -1px 2px 8px 5px rgba(171,168,171,0.42);
+    margin-top: 50px;
+    width: 60%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 27px;
+}
+
+.testimonial__p {
+    margin-top: 15px;
+    margin-bottom: .8rem;
+    position: relative;
+    line-height: 23.1px;
+    letter-spacing: .38px;
+    font-size: 13px;
+}
+
+.testimonial__container--avis {
+    display: flex;
+}
+
+.testimonial__container--avatar {
+    display: flex;
+    align-items: center;
+}
+.testimonial__container {
+    display: flex;
+    FLEX-DIRECTION: column;
+}
+
+.testimonial__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.testimonial__author--name {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.testimonial__author--role {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+//Container flex direction reverse
+@media screen and (max-width: 727px) {
+    #productive {
+        flex-direction: column-reverse;
+    }
+
+    .productive__container--right {
+        width: 90%;
+    }
+
+    .productive__container--testimonial {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:592px) {
+    .productive__container--testimonial {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,16 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+
+header {
+   background: url('/images/bg.jpg') no-repeat;
+   height: 100vh;
+   background-size: contain;
+}
+
+.header__title {
+   font-family: $font-secondary;
+   color: white;
+   font-size: 75px;
+   font-weight: bold;
+}

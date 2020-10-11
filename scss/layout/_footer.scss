@@ -1,0 +1,90 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+.container__footer {
+   height: 457px;
+   background-color: #060338;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   align-items: center;
+}
+
+.footer__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__logo {
+   margin-bottom: 2rem;
+}
+.footer__p {
+   color: white;
+}
+
+.contact__logo {
+   width: 28px;
+   height: 22px;
+   margin-right: 20px;
+}
+
+.contact__phone, .contact__mail {
+   display: flex;
+   color: white;
+   align-self: center;
+}
+
+.contact__phone {
+   margin-bottom: 1rem;
+}
+
+.nav__li {
+   color: white;
+   padding-bottom: 25px;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.attribution {
+   font-size: 15px;
+   text-align: center;
+   color: white;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
+
+.attribution-content {
+   margin-top: 50px;
+}
+
+@media screen and (max-width:724px) {
+   .container__footer {
+      height:763px;
+      justify-content: flex-end;
+   }
+
+   .footer__container {
+      flex-direction: column;
+   }
+   .nav__li {
+      padding-bottom: 1rem;
+   }
+
+   .footer__container--about, .footer__container--contact-us {
+      margin: 50px 0 50px 0;
+   }
+
+   .attribution-content {
+      margin-top: 0;
+      width: 80%;
+   }
+}
+
+
+
+
+
