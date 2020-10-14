@@ -4,17 +4,45 @@
 
 #header {
    background: url('/images/bg.jpg') no-repeat;
-   height: 100vh;
+   height: 80vh;
    background-size: cover;
+   padding: 0 67px 50px 67px;
+}
+
+.header__inner {
+   height: 100%;
    display: flex;
-   justify-content: flex-start;
-   align-items: center;
    flex-direction: column;
+   justify-content: space-between;
 }
 
 .header__title {
    font-family: $font-secondary;
    color: white;
    font-size: 75px;
-   font-weight: bold;
+   font-weight: 100;
+}
+
+
+.btn--scroll {
+   height: 100px;
+   text-decoration: none;
+   letter-spacing: 2px;
+   color: white;
+   svg {
+      margin-left: 5px;
+   }
+}
+
+//for small screen
+@media screen and(max-width: 768px) {
+
+}
+
+//For mobile
+@media screen and (max-width: 512px) {
+   .header__title {
+      font-size: 60px;
+      text-align: center;
+   }
 }
