@@ -29,5 +29,10 @@
 /* Layouts */
 @import "layout/_nav.scss";
 @import "layout/_header.scss";
+@import 'layout/_section-services.scss';
+@import 'layout/_section-sells.scss';
+@import 'layout/_section-pants.scss';
 @import "layout/_footer.scss";
 
+/* Modules */
+@import "modules/_menu-hamburger.scss";

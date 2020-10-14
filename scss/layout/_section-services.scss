@@ -1,0 +1,33 @@
+/* ===========================
+   Section services
+   =========================== */
+#services {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+}
+
+.container__service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 21%;
+}
+
+.service__p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.icon--store {
+    color: $color-secondary;
+    font-size: 50px;
+}

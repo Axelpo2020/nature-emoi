@@ -1,44 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature Emoi</title>
-    <link rel='stylesheet' href='scss/style.css'/>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'/>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'/>
+    <link rel='stylesheet' href='scss/style.css' />
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap' />
 </head>
+
 <body>
     <header id='header'>
         <div class="header__inner">
-
             <nav>
                 <div class="nav__container--logo">
-                    <img class='logo' src="images/logo.png" alt='logo nature emoi'/>
+                    <img class='logo' src="images/logo.png" alt='logo nature emoi' />
                 </div>
                 <ul class='nav-links'>
-                    <a class='btn--nav' href='#'><li>Accueil</li></a>
-                    <a class='btn--nav' href='#'><li>Nos meilleurs ventes</li></a>
-                    <a class='btn--nav' href='#'><li>Nos plantes</li></a>
+                    <a class='btn--nav' href='#'>
+                        <li>Accueil</li>
+                    </a>
+                    <a class='btn--nav' href='#sells'>
+                        <li>Nos meilleurs ventes</li>
+                    </a>
+                    <a class='btn--nav' href='#pants'>
+                        <li>Nos plantes</li>
+                    </a>
                 </ul>
+                <div class='burger'>
+                    <span></span>
+                </div>
             </nav>
-
-                <h1 class='header__title'>Nature Emoi, <br> meilleur que le chocolat.</h1>
-                <a href='#' class='btn--scroll'>Scroll<i class='fas fa-angle-down'></i></a>
+            <div class="overlay"></div>
+            <h1 class='header__title'>Nature Emoi, <br> meilleur que le chocolat.</h1>
+            <a href='#sells' class='btn--scroll'>Scroll<i class='fas fa-angle-down'></i></a>
 
         </div>
     </header>
 
+<div class="z">
+
+    <section id='services'>
+        <div class="services__container">
+            <div class="container__service">
+                <i class='icon--store fas fa-store'></i>
+                <p class='service__p'>Nos magasins à votre service</p>
+            </div>
+            <div class="container__service">
+                <i class='icon--store fas fa-people-carry'></i>
+                <p class='service__p'>Retrait en magasin sans contact</p>
+            </div>
+            <div class="container__service">
+                <i class='icon--store fas fa-truck'></i>
+                <p class='service__p'>Livraison à domicile sans contact</p>
+            </div>
+        </div>
+    </section>
+
+
+        <section id='sells' class='width'>
+            <div class="container__section--title">
+                <h1 class='section__title'>Nos meilleurs ventes</h1>
+            </div>
+            <div class="flex">
+                <div class="sells__container">
+                    <div class="container__sell container__sell--img1">
+                        <div class="box__sell ">
+                            <div class="box--info">
+                                <p class='sell__title'>Plante</p>
+                                <p class="sell__price">24,99€</p>
+                            </div>
+                            <div class="box--more">
+                                <a class='btn--more' href='#'>En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sells__container">
+                    <div class="container__sell container__sell--img2">
+                        <div class="box__sell ">
+                            <div class="box--info">
+                                <p class='sell__title'>Plante</p>
+                                <p class="sell__price">24,99€</p>
+                            </div>
+                            <div class="box--more">
+                                <a class='btn--more' href='#'>En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sells__container">
+                    <div class="container__sell container__sell--img3">
+                        <div class="box__sell ">
+                            <div class="box--info">
+                                <p class='sell__title'>Plante</p>
+                                <p class="sell__price">24,99€</p>
+                            </div>
+                            <div class="box--more">
+                                <a class='btn--more' href='#'>En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sells__container">
+                    <div class="container__sell container__sell--img4">
+                        <div class="box__sell ">
+                            <div class="box--info">
+                                <p class='sell__title'>Plante</p>
+                                <p class="sell__price">24,99€</p>
+                            </div>
+                            <div class="box--more">
+                                <a class='btn--more' href='#'>En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
 
 
 
 
 
 
+        <section id='pants'>
+            <div class="container__section--title">
+                <h1 class='section__title'>Nos plantes</h1>
 
+                <div class="pants__container--up">
+                    <div class="sells__container">
+                        <div class="container__sell container__sell--img3">
+                            <div class="box__sell ">
+                                <div class="box--info">
+                                    <p class='sell__title'>Plante</p>
+                                    <p class="sell__price">24,99€</p>
+                                </div>
+                                <div class="box--more">
+                                    <a class='btn--more' href='#'>En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pants__container--down">
+
+                </div>
+
+            </div>
+        </section>
+
+
+</div>
     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src='script.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'></script>
 </body>
+
 </html>
