@@ -184,7 +184,6 @@ nav {
 }
 
 .btn--scroll {
-  height: 100px;
   text-decoration: none;
   letter-spacing: 2px;
   color: white;
@@ -255,22 +254,6 @@ nav {
 /* ===========================
    Section sells
    =========================== */
-#sells {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;

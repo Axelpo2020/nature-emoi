@@ -1,20 +1,14 @@
 /* ===========================
    Section sells
    =========================== */
-
-#sells {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .flex {
     display:flex;
     
     flex-wrap: wrap;
     justify-content: center;
-
 }
+
+
 .sells__container {
     margin-top: 50px;
 }
