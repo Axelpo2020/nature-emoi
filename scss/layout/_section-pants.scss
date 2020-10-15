@@ -4,4 +4,34 @@
 #pants {
     margin-top: 150px;
 }
+.pants__container--up{
+    display: flex;
+    height: 600px;
+    JUSTIFY-CONTENT: space-around;
+}
+.sells__container--big {
+    background-color: plum;
+}
 
+.container__pant {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.container__pant--img1 {
+    background: url('/images/nos_plantes/1.jpg') no-repeat;
+}
+.container__pant--img2 {
+    background: url('/images/nos_plantes/2.jpg') no-repeat;
+}
+.container__pant--big {
+    width: 50%;
+    height: 100%;
+
+}
+
+.container__pant--right {
+    height: 50%;
+    width: 40%;
+}
