@@ -2,11 +2,11 @@
    Layout/Nav
    ======================= */
 nav {
-   margin-left: -40px;
+   width:   95%;
+   margin: 0 auto 0 auto;
    height: 140px;
    display: flex;
    align-items: center;
-   justify-content: flex-start;
 }
 
 .nav__container--logo {
@@ -24,6 +24,7 @@ nav {
    color: white;
    text-decoration: none;
 }
+
 .logo {
    width: 160px;
 }
@@ -48,5 +49,14 @@ nav {
    }
    .nav-active {
       transform: translateX(0%);
+   }
+}
+
+@media screen and (max-width: 512px) {
+   nav {
+      width: 100%;
+   }
+   .logo {
+      width: 100px;
    }
 }
