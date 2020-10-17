@@ -5,6 +5,7 @@ const navSlide = () => {
     const overlay = document.querySelector('.overlay')
     
     burger.addEventListener('click', () => {
+    
         //Toogle nav
         menu.classList.toggle('nav-active');
     

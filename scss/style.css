@@ -11,6 +11,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.inner {
+  width: 90%;
+  margin: auto;
+}
+
 .section__title {
   display: block;
   color: black;
@@ -24,6 +29,18 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
+}
+
+@media screen and (max-width: 820px) {
+  .section__title {
+    font-size: 43px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .section__title {
+    font-size: 30px;
+  }
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -111,8 +128,12 @@ nav {
 
 .btn--nav {
   margin-right: 45px;
-  color: white;
+  color: #FFFFFFDF;
   text-decoration: none;
+}
+
+.btn--nav:hover {
+  color: white;
 }
 
 .logo {
@@ -121,11 +142,12 @@ nav {
 
 @media screen and (max-width: 768px) {
   .nav-links {
+    display: none;
     position: absolute;
     right: 0px;
     margin: 0;
     height: 100vh;
-    top: 50px;
+    top: 0px;
     background-color: #080808;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -144,7 +166,16 @@ nav {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
+  .btn--nav {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .btn--nav:hover {
+    cursor: pointer;
+  }
   .nav-active {
+    display: block;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
@@ -271,22 +302,37 @@ nav {
   font-size: 50px;
 }
 
+@media screen and (max-width: 829px) {
+  #services {
+    height: 400px;
+    margin-top: 50px;
+  }
+  .services__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__service {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
 /* ===========================
    Section sells
    =========================== */
 .flex {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .sells__container {
-  margin-top: 50px;
+  width: 25%;
 }
 
 .container__sell--img1 {
@@ -306,8 +352,8 @@ nav {
 }
 
 .container__sell {
+  background-position: center;
   background-size: cover;
-  width: 400px;
   height: 565px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,6 +406,21 @@ nav {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 1228px) {
+  .sells__container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .flex {
+    margin-top: 21px;
+  }
+  .sells__container {
+    width: 100%;
+  }
+}
+
 /* ===========================
    Section Pants
    =========================== */
@@ -367,48 +428,24 @@ nav {
   margin-top: 150px;
 }
 
-.pants__container--up {
+.container__pants--up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
-  JUSTIFY-CONTENT: space-around;
+  height: 900px;
+  background-color: yellowgreen;
 }
 
-.sells__container--big {
-  background-color: plum;
-}
-
-.container__pant {
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.container__pant--img1 {
-  background: url("/images/nos_plantes/1.jpg") no-repeat;
-}
-
-.container__pant--img2 {
-  background: url("/images/nos_plantes/2.jpg") no-repeat;
-}
-
-.container__pant--big {
-  width: 50%;
+.container__pant--left {
   height: 100%;
+  width: 50%;
+  background-color: rebeccapurple;
 }
 
-.container__pant--right {
+.container__pants--right {
+  background-color: red;
   height: 50%;
-  width: 40%;
+  width: 50%;
 }
 
 /* Modules */
@@ -491,7 +528,7 @@ nav {
           transform: translateY(0px) rotateZ(-45deg);
 }
 
-@media screen and (max-width: 723px) {
+@media screen and (max-width: 768px) {
   .burger {
     display: block;
   }

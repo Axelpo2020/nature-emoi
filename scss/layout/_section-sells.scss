@@ -2,15 +2,13 @@
    Section sells
    =========================== */
 .flex {
+    margin-top: 50px;
     display:flex;
-    
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-
 .sells__container {
-    margin-top: 50px;
+    width: 25%;
 }
 
 .container__sell--img1 {
@@ -27,8 +25,8 @@
 }
 
 .container__sell {
+    background-position: center;
     background-size: cover;
-    width: 400px;
     height: 565px;
     display: flex;
     flex-direction: column;
@@ -63,5 +61,20 @@
     border-radius: 30px;
     &:hover {
         opacity: 0.9;
+    }
+}
+
+@media screen and (max-width: 1228px) {
+    .sells__container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .flex {
+        margin-top: 21px;
+    }
+    .sells__container {
+        width: 100%;
     }
 }

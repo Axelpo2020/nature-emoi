@@ -4,34 +4,21 @@
 #pants {
     margin-top: 150px;
 }
-.pants__container--up{
+
+.container__pants--up {
     display: flex;
-    height: 600px;
-    JUSTIFY-CONTENT: space-around;
-}
-.sells__container--big {
-    background-color: plum;
+    height: 900px;
+    background-color: yellowgreen;
 }
 
-.container__pant {
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.container__pant--img1 {
-    background: url('/images/nos_plantes/1.jpg') no-repeat;
-}
-.container__pant--img2 {
-    background: url('/images/nos_plantes/2.jpg') no-repeat;
-}
-.container__pant--big {
-    width: 50%;
+.container__pant--left {
     height: 100%;
-
+    width: 50%;
+    background-color: rebeccapurple;
 }
 
-.container__pant--right {
+.container__pants--right {
+    background-color: red;
     height: 50%;
-    width: 40%;
+    width: 50%;
 }

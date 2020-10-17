@@ -21,8 +21,9 @@ nav {
 
 .btn--nav {
    margin-right: 45px;
-   color: white;
+   color: $white;
    text-decoration: none;
+   &:hover {color: white;}
 }
 
 .logo {
@@ -30,14 +31,14 @@ nav {
 }
 
 
-
 @media screen and (max-width: 768px) {
    .nav-links {
+      display: none;
       position: absolute;
       right: 0px;
       margin: 0;
       height: 100vh;
-      top: 50px;
+      top: 0px;
       background-color: #080808;
       flex-direction: column;
       justify-content: start;
@@ -47,7 +48,18 @@ nav {
       transform: translateX(100%);
       transition: transform 0.5s ease-in-out;
    }
+
+   .btn--nav {
+      margin-right: 0;
+      width: 100%;
+      text-align: center;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+   
    .nav-active {
+      display: block;
       transform: translateX(0%);
    }
 }
