@@ -5,20 +5,48 @@
     margin-top: 150px;
 }
 
+.container__pants {
+    height: 900px;
+}
+
 .container__pants--up {
     display: flex;
-    height: 900px;
+    height: 50%;
     background-color: yellowgreen;
 }
 
-.container__pant--left {
+.pant__up--left {
     height: 100%;
     width: 50%;
     background-color: rebeccapurple;
 }
 
-.container__pants--right {
+.pant__up--right1  {
     background-color: red;
     height: 50%;
     width: 50%;
+}
+
+//Down
+.container__pants--down {
+    display: flex;
+    background-color: chocolate;
+    height: 50%;
+}
+.pant__down--left {
+    height: 100%;
+    width: 25%;
+    background-color: chartreuse;
+}
+
+.pant__down--center {
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+}
+
+.pant__down--right {
+    height: 100%;
+    width: 25%;
+    background-color: black;
 }
