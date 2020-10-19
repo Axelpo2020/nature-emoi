@@ -3,50 +3,66 @@
    =========================== */
 #pants {
     margin-top: 150px;
+    min-width: 150vh;
 }
 
-.container__pants {
-    height: 900px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
 }
 
-.container__pants--up {
+.container__pant {
     display: flex;
-    height: 50%;
-    background-color: yellowgreen;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.pant__up--left {
-    height: 100%;
-    width: 50%;
-    background-color: rebeccapurple;
+
+
+.container__pant--img1 {
+    background: url('/images/nos_plantes/1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 1/3;
+
 }
 
-.pant__up--right1  {
-    background-color: red;
-    height: 50%;
-    width: 50%;
+.container__pant--img2 {
+    background: url('/images/nos_plantes/2.jpg');
+    grid-column: 3/5;
+    background-position: center;
+    background-size: cover;
 }
 
-//Down
-.container__pants--down {
-    display: flex;
-    background-color: chocolate;
-    height: 50%;
-}
-.pant__down--left {
-    height: 100%;
-    width: 25%;
-    background-color: chartreuse;
+.container__pant--img3 {
+    background: url('/images/nos_plantes/3.jpg');
+    grid-column: 3/5;
+    background-position: center;
+    background-size: cover;
 }
 
-.pant__down--center {
-    height: 100%;
-    width: 50%;
-    background-color: rebeccapurple;
+.container__pant--img4 {
+    background: url('/images/nos_plantes/4.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 3/5;
 }
 
-.pant__down--right {
-    height: 100%;
-    width: 25%;
-    background-color: black;
+.container__pant--img5 {
+    background: url('/images/nos_plantes/5.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.container__pant--img6 {
+    background: url('/images/nos_plantes/6.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 3/5;
 }

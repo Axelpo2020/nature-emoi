@@ -426,56 +426,111 @@ nav {
    =========================== */
 #pants {
   margin-top: 150px;
+  min-width: 150vh;
 }
 
-.container__pants {
-  height: 900px;
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (400px)[4];
+      grid-template-rows: repeat(4, 400px);
 }
 
-.container__pants--up {
+.container__pant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50%;
-  background-color: yellowgreen;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.pant__up--left {
-  height: 100%;
-  width: 50%;
-  background-color: rebeccapurple;
+.container__pant--img1 {
+  background: url("/images/nos_plantes/1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
 }
 
-.pant__up--right1 {
-  background-color: red;
-  height: 50%;
-  width: 50%;
+.container__pant--img2 {
+  background: url("/images/nos_plantes/2.jpg");
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  background-position: center;
+  background-size: cover;
 }
 
-.container__pants--down {
+.container__pant--img3 {
+  background: url("/images/nos_plantes/3.jpg");
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  background-position: center;
+  background-size: cover;
+}
+
+.container__pant--img4 {
+  background: url("/images/nos_plantes/4.jpg");
+  background-position: center;
+  background-size: cover;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
+.container__pant--img5 {
+  background: url("/images/nos_plantes/5.jpg");
+  background-position: center;
+  background-size: cover;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
+.container__pant--img6 {
+  background: url("/images/nos_plantes/6.jpg");
+  background-position: center;
+  background-size: cover;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-family: sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: chocolate;
-  height: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.pant__down--left {
-  height: 100%;
-  width: 25%;
-  background-color: chartreuse;
-}
-
-.pant__down--center {
-  height: 100%;
-  width: 50%;
-  background-color: rebeccapurple;
-}
-
-.pant__down--right {
-  height: 100%;
-  width: 25%;
-  background-color: black;
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Modules */
