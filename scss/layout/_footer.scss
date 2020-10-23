@@ -10,3 +10,9 @@ footer {
         color:black;
     }
 }
+
+@media screen and (max-width: 535px) {
+    footer {
+        font-size: 10px;
+    }
+}

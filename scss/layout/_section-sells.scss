@@ -12,16 +12,16 @@
 }
 
 .container__sell--img1 {
-    background: url('/images/nos_meilleures_ventes/1.jpg') no-repeat;
+    background: url('../images/nos_meilleures_ventes/1.jpg') no-repeat;
 }
 .container__sell--img2 {
-    background: url('/images/nos_meilleures_ventes/2.jpg') no-repeat;
+    background: url('../images/nos_meilleures_ventes/2.jpg') no-repeat;
 }
 .container__sell--img3 {
-    background: url('/images/nos_meilleures_ventes/3.jpg') no-repeat;
+    background: url('../images/nos_meilleures_ventes/3.jpg') no-repeat;
 }
 .container__sell--img4 {
-    background: url('/images/nos_meilleures_ventes/4.jpg') no-repeat;
+    background: url('../images/nos_meilleures_ventes/4.jpg') no-repeat;
 }
 
 .container__sell {
@@ -35,7 +35,7 @@
 
 .box__sell {
     padding: 0 20px 0 20px;
-    height: 15%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +45,11 @@
 .sell__title, .sell__price {
     font-weight: bold;
     font-size: 20px;
+}
+.sell__title::after {
+    position: absolute;
+    background-color: red;
+    height: 40px;
 }
 
 .sell__price {

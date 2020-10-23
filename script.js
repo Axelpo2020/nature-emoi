@@ -1,42 +1,18 @@
-//Nav bar responsive
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const menu = document.querySelector('.nav-links');
-    const overlay = document.querySelector('.overlay')
-    
-    burger.addEventListener('click', () => {
-    
-        //Toogle nav
-        menu.classList.toggle('nav-active');
-    
-        //Burger Animation
-        burger.classList.toggle('active');
+//Menu responsive
+const btn = document.getElementById("menu-toggle");
+const lines = btn.querySelectorAll(".line");
+const cls = { open: "open", close: "close" };
+let btnClass = cls.open;
 
-        //Overlay 
-        if (menu.classList.contains('nav-active')) {
-            overlay.style.display = 'block'
-        } else {
-            overlay.style.display = 'none'
-        }
+btn.addEventListener("click", () => {
+  if (btn.classList.contains(cls.open)) {
+    btn.classList.remove(btnClass);
+    btnClass = cls.close;
+  } else if (btn.classList.contains(cls.close)) {
+    btn.classList.remove(btnClass);
+    btnClass = cls.open;
+  }
 
-        overlay.addEventListener('click', () => {
-            burger.classList.remove('active');
-            menu.classList.remove('nav-active');
-            overlay.style.display = 'none'
-        })
-
-        //Item list
-        const ulChild = document.querySelector('.nav-links').children
-
-        for (let i = 0; i < ulChild.length; i++) {
-            let li = ulChild[i];
-            li.addEventListener('click', () => {
-                burger.classList.remove('active');
-                menu.classList.remove('nav-active');
-                overlay.style.display = 'none'
-            })
-        }
-    })
-}
-
-navSlide()
+  void btn.offsetWidth;
+  btn.classList.add(btnClass);
+});
