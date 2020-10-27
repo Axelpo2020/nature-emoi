@@ -45,7 +45,7 @@ $toggle-anim-speed: 0.9s;
         content: '';
         display: block;
         width: 100%;
-        height: $toggle-line-size;
+        height: 3.5px;
         background-color: $toggle-line-color;
         border-radius: 2px;
         transform: translateZ(0) rotate(0);

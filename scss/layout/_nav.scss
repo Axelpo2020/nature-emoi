@@ -32,6 +32,14 @@ nav {
 
 
 
+@media screen and (max-width: 768px) {
+   .nav-links {
+      display: none;
+   }
+   .nav-active {
+      display: block;
+   }
+}
 
 
 
